@@ -1,0 +1,102 @@
+body{
+  background-color: #2d3f50;
+}
+
+.container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.tab-menus {
+  position: relative;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+  background-color: blue;
+  padding: 10px 20px;
+  user-select: none;
+}
+
+.slider {
+  height: 5px;
+  background-color: yellowgreen;
+  transition: all 0.5s ease-in;
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+}
+
+.box-background {
+  margin-top: 20px;
+  width: 80vw;
+  height: 400px;
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+  background-color: black;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.box-1 {
+  background-color: red;
+}
+
+.box-1 h1 {
+  color: white;
+  font-size: 40px;
+  text-shadow: 3px 3px 7px white;
+}
+
+.box-2 {
+  background-color: yellow;
+}
+
+.box-3 {
+  background-color: lightcoral;
+}
+
+.box-4 {
+  background-color: green;
+}
+
+.box-5 {
+  background-color: grey;
+}
+
+.box-2 h2{
+  padding: 10px;
+  border: 5px solid black;
+  border-radius: 10px;
+  margin: 5px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.is-opened {
+  z-index: 1;
+}
+
+.is-colsed {
+  z-index: 0;
+}

@@ -1,0 +1,86 @@
+body {
+  background-color: #3d405b;
+  color: #20c992;
+}
+
+.container {
+  position: relative;
+  max-width: 800px;
+  margin-top: 100px;
+  background-color: blue;
+}
+
+.hamburger-menu-container {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.hamburger {
+  width: 40px;
+  height: 4px;
+  background-color: #cdedf6;
+  margin: 5px 0px;
+  border-radius: 5px;
+}
+
+.line2 {
+  transition: opacity 0.5s ease;
+}
+
+.hide-line2 {
+  opacity: 0;
+}
+
+.line1, .line2, .line3, .overlay-menu, .move-li-up {
+  transition: all 0.5s ease;
+}
+
+.rotate-plus-45deg {
+  transform: rotate(45deg) translate(4px,9px);
+}
+
+.rotate-minus-45deg {
+  transform: rotate(-45deg) translate(4px, -9px);
+}
+
+.overlay-menu {
+  width: 100vw;
+  height: 100vh;
+  background-color: #042a2b;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 35px;
+  padding: 10px;
+}
+
+.show-overlay-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+li:hover {
+  opacity: 0.7;
+  font-size: 60px;
+}
+
+li {
+  list-style: none;
+  padding: 10px;
+  user-select: none;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.move-li-up {
+  transform: translateY(-10px);
+}
