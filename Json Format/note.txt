@@ -1,0 +1,14 @@
+What is Json?
+Json သည် Client side နှင့် Server side အကြား data များ သယ်ယူ ဆောင်ရွက်ရာတွင် သတ်မှတ် structure ဖြင့် ရေးဖွဲ့ ထားသော data အစုအဝေး
+
+Json format တွင် object နှင့် array type ဖြင့် ဖွဲ့စည်းသည်။
+Json object သည် JavaScript Object နှင့် တူသယောင်ရှိသော်လည်း ပိုမိုစည်းကမ်းသတ်မှတ်ထားသည်။
+Json format တွင် အောက်ပါ data type များသာလက်ခံသည်...
+(string, number, json object, array, boolean, null)
+string များတွင်လည်း double quote သာ ရေးရသည်။ (မိမိရေးထားသော json format valid ဖြစ်/မဖြစ် jsonlint website တွင် check နိုင်သည်။)
+
+localstorage တွင် ထည့်သွင်းလိုသော key : value များသည် string သာလက်ခံသည်။
+
+ထို့​ကြောင့် localstorage တွင် obj များသိမ်းလိုသောအခါ Js Obj အား Json string အဖြစ်ပြောင်းလဲပြီး ထည့်သွင်းလေ့ရှိကြသည်..serialization ဟုခေါ်သည်။
+JS data type --> json string =====> serialization;
+json string  --> JS data type=====> deserialization;
